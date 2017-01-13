@@ -21,7 +21,7 @@ public class TwoTableController {
 		return "layouts/default";
 	}
 	
-	
+	////
 	@PostMapping(value="/twotable/create")
 	public String postForm(Model model,TwoTableEntity twoTableEntity){
 		twoTableService.saveForm(twoTableEntity);
