@@ -20,7 +20,7 @@ public class TwoTableController {
 		model.addAttribute("body", "twotable/createTwoTable");
 		return "layouts/default";
 	}
-	//save data to database
+	
 	
 	@PostMapping(value="/twotable/create")
 	public String postForm(Model model,TwoTableEntity twoTableEntity){
