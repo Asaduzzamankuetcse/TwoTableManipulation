@@ -12,12 +12,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TwoTableController {
 	@Autowired
 	private TwoTableService twoTableService;
+	//create Form view
+	
 	@GetMapping(value="/twotable/create")
 	public String createForm(Model model){
 		model.addAttribute(new TwoTableEntity());
 		model.addAttribute("body", "twotable/createTwoTable");
 		return "layouts/default";
 	}
+	//save data to database
+	
 	@PostMapping(value="/twotable/create")
 	public String postForm(Model model,TwoTableEntity twoTableEntity){
 		twoTableService.saveForm(twoTableEntity);
