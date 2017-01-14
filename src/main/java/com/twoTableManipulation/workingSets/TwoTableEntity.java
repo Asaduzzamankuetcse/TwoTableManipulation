@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name="tb_twotable_table1")
+@Table(name="tb_tt_table1")
 public class TwoTableEntity {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
