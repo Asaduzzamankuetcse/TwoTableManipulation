@@ -40,11 +40,7 @@ public class TwoTableEntity {
 	public void setCode(String code) {
 		this.code = code;
 	}
-	@Override
-	public String toString() {
-		return "TwoTableEntity [tableId=" + tableId + ", name=" + name + ", code=" + code + ", getTableId()="
-				+ getTableId() + ", getName()=" + getName() + ", getCode()=" + getCode() + "]";
-	}
+
 	
 	
 	
