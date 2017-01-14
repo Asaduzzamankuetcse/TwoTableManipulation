@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div th:fragment="table-script">
+		<script th:src="@{/js/jquery.dataTables.min.js}"></script>
+		<script th:src="@{/js/dataTables.bootstrap.js}"></script>
+		<script th:src="@{/js/dataTables.buttons.min.js}"></script>
+		<script th:src="@{/js/buttons.bootstrap.min.js}"></script>
+		<script th:src="@{/js/jszip.min.js}"></script>
+		<script th:src="@{/js/pdfmake.min.js}"></script>
+		<script th:src="@{/js/vfs_fonts.js}"></script>
+		<script th:src="@{/js/buttons.html5.min.js}"></script>
+		<script th:src="@{/js/buttons.print.min.js}"></script>
+		<script th:src="@{/js/dataTables.fixedHeader.min.js}"></script>
+		<script th:src="@{/js/dataTables.keyTable.min.js}"></script>
+		<script th:src="@{/js/dataTables.responsive.min.js}"></script>
+		<script th:src="@{/js/responsive.bootstrap.min.js}"></script>
+		<script th:src="@{/js/dataTables.scroller.min.js}"></script>
+		
+		
+		<!-- pace -->		
+        <script th:src="@{/js/pace.min.js}"></script>
+        <script th:inline="javascript">
+		/*<![CDATA[*/
+          var handleDataTableButtons = function() {
+              "use strict";
+              0 !== $("#datatable-buttons").length && $("#datatable-buttons").DataTable({
+                dom: "Bfrtip",
+                buttons: [{
+                  extend: "copy",
+                  className: "btn-sm"
+                }, {
+                  extend: "csv",
+                  className: "btn-sm"
+                }, {
+                  extend: "excel",
+                  className: "btn-sm"
+                }, {
+                  extend: "pdf",
+                  className: "btn-sm"
+                }, {
+                  extend: "print",
+                  className: "btn-sm"
+                }],
+                responsive: !0
+              })
+            },
+            TableManageButtons = function() {
+              "use strict";
+              return {
+                init: function() {
+                  handleDataTableButtons()
+                }
+              }
+            }();
+    		/*]]>*/
+        </script>
+        
+        <script th:inline="javascript">
+        /*<![CDATA[*/
+          $(document).ready(function() {
+            $('#datatable').dataTable();
+            $('#datatable-keytable').DataTable({
+              keys: true
+            });
+            $('#datatable-responsive').DataTable();
+            $('#datatable-scroller').DataTable({
+              ajax: "js/datatables/json/scroller-demo.json",
+              deferRender: true,
+              scrollY: 380,
+              scrollCollapse: true,
+              scroller: true
+            });
+            var table = $('#datatable-fixed-header').DataTable({
+              fixedHeader: true
+            });
+          });
+          TableManageButtons.init();
+  		/*]]>*/
+        </script>
+		
+	</div>
+
+</body>
+</html>

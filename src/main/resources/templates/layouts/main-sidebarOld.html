@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div th:fragment="main-sidebar">
+
+		<aside class="main-sidebar">
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+				<!-- Sidebar user panel -->
+
+				<!-- search form -->
+
+				<!-- /.search form -->
+				<!-- sidebar menu: : style can be found in sidebar.less -->
+				<ul class="sidebar-menu">
+
+					<li class="treeview"><a href="#"> <i
+							class="fa fa-dashboard"></i> <span>Dashboard</span> <span
+							class="pull-right-container"> <i
+								class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+						<ul class="treeview-menu">
+							<li><a href="../../index.html"><i class="fa fa-circle-o"></i>
+									Dashboard v1</a></li>
+							<li><a href="../../index2.html"><i
+									class="fa fa-circle-o"></i> Dashboard v2</a></li>
+						</ul></li>
+					<li class="treeview"><a href="#"> <i
+							class="fa fa-dashboard"></i> <span>Administration</span> <span
+							class="pull-right-container"> <i
+								class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+						<ul class="treeview-menu">
+							<li><a th:href="@{/users}"><i class="fa fa-circle-o"></i>
+									Users</a></li>
+							<li><a th:href="@{/user/create}"><i
+									class="fa fa-circle-o"></i>Create User</a></li>
+						</ul>
+						<ul class="treeview-menu">
+							<li><a href="../../pages/forms/rolelist.html"><i
+									class="fa fa-circle-o"></i> Role</a></li>
+							<li><a href="../../pages/forms/role-create.html"><i
+									class="fa fa-circle-o"></i>Create Role</a></li>
+						</ul>
+						<ul class="treeview-menu">
+							<li><a href="../../pages/forms/loan-form.html"><i
+									class="fa fa-circle-o"></i> Loan Initiation</a></li>
+						</ul></li>
+				</ul>
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+	</div>
+
+</body>
+</html>

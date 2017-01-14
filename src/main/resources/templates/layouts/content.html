@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+	<div th:fragment="content">
+		<div class="content-wrapper">
+			<section class="content-header">
+				
+			</section>
+
+			<section class="content">
+				<div class="row">
+					<div th:replace="${body} :: body"></div>
+				</div>
+			</section>
+		</div>
+
+		<!-- include all js files -->
+		<!-- <div th:include="/layouts/table-script :: table-script"></div> -->
+	</div>
+</body>
+</html>

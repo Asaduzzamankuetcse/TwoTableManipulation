@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+</head>
+<body>
+	<div th:fragment="leftSideBar" class="skinn">
+		<aside class="main-sidebar ">
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+				
+				<ul class="sidebar-menu">
+
+					<li class="treeview"><a href="#"> <i class="fa fa-cogs"></i>
+							<span>Settings</span> <span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+						<ul class="treeview-menu">
+							<li><a th:href="@{/company}"><i class="fa fa-cog"></i>
+									Company Settings</a></li>
+							<li><a th:href="@{/settings}"><i class="fa fa-wrench"></i>Setting</a></li>
+						</ul></li>
+					<li class="treeview"><a href="#"> <i class="fa fa-navicon"></i>
+							<span>Administration</span> <span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+						<ul class="treeview-menu">
+							<li><a th:href="@{/users}"><i class="fa fa-user"></i>User</a></li>
+							<li><a th:href="@{/}"><i class="fa fa-users"></i>Role</a></li>
+							<li><a th:href="@{/orglist}"><i class="fa fa-bank"></i>Organization</a></li>
+							<li><a th:href="@{/branches}"><i class="fa fa-sitemap"></i>Branch</a></li>
+							<li><a th:href="@{/loan}"><i class="fa fa-money"></i>Loan
+									Type</a></li>
+							<li><a th:href="@{/custlist}"><i
+									class="fa fa-user-secret"></i>Customer Type</a></li>
+							<li><a th:href="@{/income}"><i
+									class="fa fa-user-secret"></i>Income Type</a></li>
+							<li><a th:href="@{/expenditure}"><i
+									class="fa fa-user-secret"></i>Expenditure Type</a></li>
+						</ul></li>
+						
+						
+						<li class="treeview"><a th:href="@{/inbox}"><i class="fa fa-envelope"></i>
+							<span> Inbox </span> <span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a></li>
+					
+					<li class="treeview"><a th:href="@{/loan/create}"><i class="fa fa-money"></i>
+							<span> Loan Initiation </span> <span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a></li>
+					
+				</ul>
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+	</div>
+</body>
+</html>
