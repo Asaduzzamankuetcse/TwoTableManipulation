@@ -5,7 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+/**
+ * 
+ * @author Asad
+ *
+ */
 @Entity
 @Table(name="tb_twotable_table1")
 public class TwoTableEntity {
