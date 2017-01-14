@@ -6,6 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 
+ * @author jack21for
+ *
+ */
+
+
 @Entity
 @Table(name="tb_twotable_table1")
 public class TwoTableEntity {
