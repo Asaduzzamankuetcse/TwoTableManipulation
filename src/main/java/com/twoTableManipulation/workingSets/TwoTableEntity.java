@@ -18,7 +18,7 @@ public class TwoTableEntity {
 		
 	}
 	public TwoTableEntity(String name, String code) {
-		super();
+//		super();
 		this.name = name;
 		this.code = code;
 	}
