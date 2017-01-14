@@ -43,7 +43,7 @@ public class TwoTableEntity {
 	@Override
 	public String toString() {
 		return "TwoTableEntity [tableId=" + tableId + ", name=" + name + ", code=" + code + ", getTableId()="
-				+ getTableId() + ", getName()=" + getName() + ", getCode()=" + getCode() + "]";
+				+ getTableId() + ", getName()=" + getName() + getCode() + "]";
 	}
 	
 	

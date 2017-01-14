@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 public class TwoTableDao {
 	
 	public void saveForm(TwoTableEntity twoTableEntity) {
-		// TODO Auto-generated method stub
 		
 	}
 
