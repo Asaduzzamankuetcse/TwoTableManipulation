@@ -10,7 +10,7 @@ public class TwoTableService {
 
 	public void saveForm(TwoTableEntity twoTableEntity) {
 		// TODO Auto-generated method stub
-		//twoTableDao.saveForm(twoTableEntity);
+		twoTableDao.saveForm(twoTableEntity);
 		
 	}
 
