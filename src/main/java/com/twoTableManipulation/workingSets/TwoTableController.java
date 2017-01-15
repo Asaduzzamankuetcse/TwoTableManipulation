@@ -17,8 +17,9 @@ public class TwoTableController {
 	@GetMapping(value="/twotable/create")
 	public String createForm(Model model){
 		model.addAttribute(new TwoTableEntity());
-		model.addAttribute("body", "twotable/createTwoTable");
-		return "layouts/default";
+		//model.addAttribute("body", "twotable/createTwoTable");
+		
+		return "twotable/createtwotable";
 	}
 	
 	
